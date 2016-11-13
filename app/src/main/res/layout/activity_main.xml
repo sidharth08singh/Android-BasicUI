@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.singlescreenapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/header">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/dropdown"
+            android:id="@+id/dropdown" />
+
+        <TextView
+            android:text="@string/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/appName"
+            android:fontFamily="cursive"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@+id/dropdown"
+            android:layout_alignStart="@+id/dropdown" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/verticalpanel"
+        android:layout_centerInParent="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:id="@+id/iv_logo"
+            android:contentDescription="@string/chelsea_logo"
+            android:elevation="21dp"
+            android:src="@drawable/chelsealogo"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:text="@string/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/body"
+            android:textSize="18sp"
+            android:textColor="#757575"
+            android:fontFamily="Open Sans', sans-serif"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:id="@+id/separator2"
+            android:textAlignment="center"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_names"
+            android:layout_marginTop="5dp">
+
+
+            <TextView
+                android:text="@string/captain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_captain"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#757575"
+                android:textAlignment="center"
+                android:background="@android:color/white"
+                android:fontFamily="Open Sans', sans-serif"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:text="@string/stadium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_stadium"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#757575"
+                android:fontFamily="Open Sans', sans-serif"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:text="@string/manager"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_manager"
+                android:layout_weight="1"
+                android:fontFamily="Open Sans', sans-serif"
+                android:textSize="20sp"
+                android:textColor="#757575"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="center"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_images"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:id="@+id/iv_captainterry"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/captainterry" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/stamfordbridge"
+                android:id="@+id/iv_stadium"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/antonioconte"
+                android:id="@+id/iv_conte"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/footer"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/footerbackground"
+                android:background="@android:color/black" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/location_icon"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/locationicon" />
+
+            <TextView
+                android:text="@string/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_icon"
+                android:id="@+id/location"
+                android:fontFamily="Open Sans', sans-serif"
+                android:textSize="15sp"
+                android:textColor="#757575"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="125dip"
+                android:layout_height="30dip"
+                android:background="@drawable/socialicons"
+                android:id="@+id/footersocial"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:text="@string/follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/footersocial"
+                android:layout_alignParentRight="false"
+                android:id="@+id/footerfollow"
+                android:fontFamily="Open Sans', sans-serif"
+                android:textSize="12sp"
+                android:textColor="#757575"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
