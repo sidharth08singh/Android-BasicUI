@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SingleScreenApp</string>
+    <string name="title">Chelsea Fan App</string>
+    <string name="info">Est - 1908\nOwner - Roman Abramovich\nLeague Position - 4\nLast Game - Chelsea 5 Everton 0</string>
+    <string name="captain">Captain</string>
+    <string name="stadium">Stadium</string>
+    <string name="manager">Manager</string>
+    <string name="location">Fulham Rd, Fulham, London SW6 1HS, UK</string>
+    <string name="follow">follow on </string>
+    <string name="chelsea_logo">Chelsea Logo</string>
+</resources>
+
